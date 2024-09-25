@@ -1,5 +1,6 @@
 ﻿using LeetCode.LeetCodeSolutions;
 using System.Collections;
+using System.Text;
 
 namespace LeetCode
 {
@@ -10,11 +11,20 @@ namespace LeetCode
             //Hello into my LeetCode solutions
             //You can find the solutions in the LeetCodeSolutions folder
 
-            
-            
+            Console.WriteLine(ScoreOfString("hello"));
+
         }
 
+        public static int ScoreOfString(string s)
+        {
+            int result = 0;
+            for (int i = 1; i < s.Length; i++)
+            {
+                result += Math.Abs(s[i] - s[i - 1]);
+            }
+            return result;
 
+        }
 
 
 
@@ -61,5 +71,5 @@ namespace LeetCode
         //        return false;
         //    }
     }
-    }
 }
+
