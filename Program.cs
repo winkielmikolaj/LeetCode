@@ -12,44 +12,15 @@ namespace LeetCode
             //Hello into my LeetCode solutions
             //You can find the solutions in the LeetCodeSolutions folder
 
-            int[] nums = [1, 2, 3, 4];
-
-            
-
-            
-            int[] ans = nums.Where(x => x % 3 == 1 || x % 3 == 2).ToArray();
-
-            foreach (int item in ans)
-            {
-                Console.WriteLine(item);
-            }
-
-            Console.WriteLine(ans.Length);
             
             
-        }
-        public static int[] GetConcatenation(int[] nums)
-        {
-            int[] ans = nums.Concat(nums).ToArray();
 
-            foreach (int numbers in ans)
-            {
-                Console.WriteLine(numbers);
-            }
-        
-            return ans;
+
+            Console.ReadLine();
         }
 
-        public static int ScoreOfString(string s)
-        {
-            int result = 0;
-            for (int i = 1; i < s.Length; i++)
-            {
-                result += Math.Abs(s[i] - s[i - 1]);
-            }
-            return result;
 
-        }
+
 
 
 
