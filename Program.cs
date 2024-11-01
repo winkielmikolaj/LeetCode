@@ -13,7 +13,7 @@ namespace LeetCode
             //Hello into my LeetCode solutions
             //You can find the solutions in the LeetCodeSolutions folder
 
-            GetSneakyNumbers([0, 1, 0, 0]);
+            GetSneakyNumbers([0, 0, 0, 0]);
 
 
             Console.ReadLine();
