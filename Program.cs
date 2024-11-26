@@ -13,81 +13,31 @@ namespace LeetCode
             //Hello into my LeetCode solutions
             //You can find the solutions in the LeetCodeSolutions folder
 
-            GetSneakyNumbers([0, 0, 0, 0]);
+            FindWordsContaining(["leet", "code"], 'e');
 
 
             Console.ReadLine();
         }
 
-        static public int[] GetSneakyNumbers(int[] nums)
+        public static IList<int> FindWordsContaining(string[] words, char x)
         {
-            
-            HashSet<int> result = new HashSet<int>(nums);
+            var result = new List<int>();
 
-            int[] ans;
-
-            foreach (int num in nums)
+            for (int i = 0; i < words.Length; i++)
             {
-                //Console.WriteLine(num);
-                ans = new int[num];
-
-                foreach (int an in ans)
+                if (words[i].Contains(x))
                 {
-                    Console.WriteLine(an);
+                    result.Add(i);
                 }
             }
 
-            
-            
+            foreach (int i in result)
+            {
+                Console.WriteLine(i);
+            }
 
-            return nums;
+            return result;
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        //#20
-        //public static bool IsValid(string s, string a)
-        //{
-
-        //    Stack stack = new Stack();
-
-        //    stack.Push("()");
-        //    stack.Push("{}");
-        //    stack.Push("[]");
-
-        //    if (stack.Contains(a))
-        //    {
-        //        return true;
-        //    }
-        //    else
-        //    {
-        //        return false;
-        //    }
     }
 }
 
