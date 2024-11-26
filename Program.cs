@@ -6,38 +6,39 @@ using System.Threading.Channels;
 
 namespace LeetCode
 {
-    internal class Program
+    class Program
     {
         static void Main(string[] args)
         {
             //Hello into my LeetCode solutions
             //You can find the solutions in the LeetCodeSolutions folder
 
-            FindWordsContaining(["leet", "code"], 'e');
-
+            MaximumWealth([[1, 5], [99, 1], [3, 5]]);
 
             Console.ReadLine();
         }
 
-        public static IList<int> FindWordsContaining(string[] words, char x)
+        public static int MaximumWealth(int[][] accounts)
         {
-            var result = new List<int>();
+            int sum = 0;
 
-            for (int i = 0; i < words.Length; i++)
+            int theBiggest = 0;
+
+            for (int i = 0; i < accounts.Length; i++)
             {
-                if (words[i].Contains(x))
+                sum = accounts[i].Sum();
+
+                if(sum > theBiggest)
                 {
-                    result.Add(i);
+                    theBiggest = sum;
                 }
             }
 
-            foreach (int i in result)
-            {
-                Console.WriteLine(i);
-            }
+            Console.WriteLine(theBiggest);
 
-            return result;
+            return theBiggest;
         }
+
     }
 }
 
