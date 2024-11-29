@@ -13,19 +13,22 @@ namespace LeetCode
             //Hello into my LeetCode solutions
             //You can find the solutions in the LeetCodeSolutions folder
 
-            Sum(12, 5);
+            GetSum(12, 5);
 
             Console.ReadLine();
         }
 
-        public static int Sum(int num1, int num2)
+        public static int GetSum(int a, int b)
         {
+            int[] array = { a, b };
 
-            int sum = num1 + num2;
+            int ans = 0;
 
-            Console.WriteLine(sum);
+            ans = array.Sum();
 
-            return num1 + num2;
+            Console.WriteLine(ans);
+
+            return ans;
         }
     }
 }
