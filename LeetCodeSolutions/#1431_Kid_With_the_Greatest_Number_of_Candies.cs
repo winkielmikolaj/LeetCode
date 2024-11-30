@@ -1,23 +1,13 @@
-﻿using LeetCode.LeetCodeSolutions;
-using System;
-using System.Collections;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using System.Threading.Channels;
+using System.Threading.Tasks;
 
-namespace LeetCode
+namespace LeetCode.LeetCodeSolutions
 {
-    class Program
+    internal class _1431_Kid_With_the_Greatest_Number_of_Candies
     {
-        static void Main(string[] args)
-        {
-            //Hello into my LeetCode solutions
-            //You can find the solutions in the LeetCodeSolutions folder
-
-            KidsWithCandies([2, 3, 5, 1, 3], 3);
-
-            Console.ReadLine();
-        }
-
         public static IList<bool> KidsWithCandies(int[] candies, int extraCandies)
         {
             IList<bool> result = new List<bool>();
@@ -43,9 +33,10 @@ namespace LeetCode
                 Console.WriteLine(resu);
             }
 
-                return result;
+            return result;
         }
-
     }
 }
 
+//Copy to main
+//KidsWithCandies([2, 3, 5, 1, 3], 3);
