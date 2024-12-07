@@ -12,7 +12,7 @@ namespace LeetCode.LeetCodeSolutions
 
         public ParkingSystem(int big, int medium, int small)
         {
-            cars = [0, big, medium, small];
+            cars = [0, big, medium, small]; //test
         }
 
         public bool AddCar(int carType)
