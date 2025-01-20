@@ -1,29 +1,13 @@
-﻿using LeetCode.LeetCodeSolutions;
-using System;
-using System.Collections;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Channels;
+using System.Threading.Tasks;
 
-namespace LeetCode
+namespace LeetCode.LeetCodeSolutions
 {
-    class Program
+    internal class _1365_How_Many_Numbers_Are_Smaller_Than_the_Current_Number
     {
-        static void Main(string[] args)
-        {
-            //Hello into my LeetCode solutions
-            //You can find the solutions in the LeetCodeSolutions folder
-
-            SmallerNumbersThanCurrent([8, 1, 2, 2, 3]);
-
-            Console.ReadLine();
-        }
-
-
-
-
-
-
 
         public static int[] SmallerNumbersThanCurrent(int[] nums)
         {
@@ -48,11 +32,5 @@ namespace LeetCode
 
             return result;
         }
-
     }
-
 }
-
-
-
-
