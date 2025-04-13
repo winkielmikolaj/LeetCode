@@ -14,45 +14,60 @@ namespace LeetCode
             //Hello into my LeetCode solutions
             //You can find the solutions in the LeetCodeSolutions folder
 
-            SmallerNumbersThanCurrent([8, 1, 2, 2, 3]);
+            
+            
+            
+            
+            Solution solution = new Solution();
+
+            solution.LongestCommonPrefix(["flower", "flow", "flight"]);
 
             Console.ReadLine();
         }
 
-
-
-
-
-
-
-        public static int[] SmallerNumbersThanCurrent(int[] nums)
+        public class Solution
         {
-            int[] sortedNums = (int[])nums.Clone();
-            Array.Sort(sortedNums);
-
-            Dictionary<int, int> smallerCount = new Dictionary<int, int>();
-
-            for (int i = 0; i < sortedNums.Length; i++)
+            public string LongestCommonPrefix(string[] strs)
             {
-                if (!smallerCount.ContainsKey(sortedNums[i]))
+                if (strs is null)
                 {
-                    smallerCount[sortedNums[i]] = i;
+                    return "";
                 }
-            }
+                
+                bool czyRobicDalej = true;
 
-            int[] result = new int[nums.Length];
-            for (int i = 0; i < nums.Length; i++)
-            {
-                result[i] = smallerCount[nums[i]];
-            }
+                string prefix = "";
+                
+                int index = 0;
+                while (czyRobicDalej)
+                {
+                    char znakDoPorownania;
 
-            return result;
+                    if (strs[0].Length <= index)
+                    {
+                        break;
+                    }
+
+                    znakDoPorownania = strs[0][index];
+
+                    foreach (var word in strs)
+                    {
+                        if (word.Length <= index || word[index] != znakDoPorownania)
+                        {
+                            czyRobicDalej = false;
+                            break;
+                        }
+                    }
+
+                    if (czyRobicDalej)
+                    {
+                        prefix += znakDoPorownania;
+                        index++;
+                    }
+                }
+
+                return prefix;
+            }
         }
-
     }
-
 }
-
-
-
-
