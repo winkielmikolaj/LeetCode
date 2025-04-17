@@ -18,11 +18,7 @@ namespace LeetCode
             
             
             
-            Solution solution = new Solution();
-
-            solution.LongestCommonPrefix(["flower", "flow", "flight"]);
-
-            Console.ReadLine();
+System.Console.WriteLine("test maszynki codespace");
         }
 
         public class Solution
