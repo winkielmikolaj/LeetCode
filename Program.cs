@@ -15,10 +15,14 @@ namespace LeetCode
             //You can find the solutions in the LeetCodeSolutions folder
 
             
+            int x = 15;
+            foreach (var item in args)
+            {
+                
+            }
             
             
-            
-System.Console.WriteLine("test maszynki codespace");
+System.Console.WriteLine("test maszynki codespace na moim swietnym lapku");
         }
 
         public class Solution
