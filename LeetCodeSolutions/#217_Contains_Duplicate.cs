@@ -11,17 +11,17 @@ namespace LeetCode.LeetCodeSolutions
     {
         public bool ContainsDuplicate(int[] nums)
             {
-                    HashSet<int> test = new HashSet<int>();
+                    HashSet<int> uniqueElements = new HashSet<int>();
                     
                     for (int i = 0; i < nums.Length; i++)
                     {
                         
-                        if(test.Contains(nums[i]))
+                        if(uniqueElements.Contains(nums[i]))
                         {
                             
                             return true;
                         }
-                        test.Add(nums[i]);
+                        uniqueElements.Add(nums[i]);
                         
                         
                         
