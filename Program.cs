@@ -15,13 +15,12 @@ namespace LeetCode
             //You can find the solutions in the LeetCodeSolutions folder
 
 
-
             
         }
 
         public class Solution
         {
-
+            
         }
         
     }
