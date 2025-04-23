@@ -13,12 +13,11 @@ namespace LeetCode
         {
             //Hello into my LeetCode solutions
             //You can find the solutions in the LeetCodeSolutions folder
-            
+
         }
 
-        public class Solution
-        {
-            
+        public class Solution {
+ 
         }
         
     }
