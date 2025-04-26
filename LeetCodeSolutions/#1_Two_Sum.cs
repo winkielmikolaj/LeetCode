@@ -21,5 +21,23 @@ public class _1_Two_Sum
         return [0];
     }
     
-    //optimized solution using hashmappping
+    //optimized solution using dictionary
+    public int[] TwoSums(int[] nums, int target)
+    {
+        Dictionary<int, int> dictionary = new Dictionary<int, int>();
+
+        for (int i = 0; i < nums.Length; i++)
+        {
+            int needNum = target - nums[i];
+
+            if (dictionary.ContainsKey(needNum))
+            {
+                return new int[] { dictionary[needNum], i };
+            }
+            dictionary[nums[i]] = i;
+        }
+
+        throw new ArgumentException("no two sum solution");
+
+    }
 }
