@@ -2,6 +2,8 @@
 
 public class _1299__Replace_Elements_with_Greatest_Element_on_Right_Side
 {
+    
+    //very nice soluion with O(n) time complexity, beats 100% others!!!
     public int[] ReplaceElements(int[] arr)
     {
         int biggest = -1;
