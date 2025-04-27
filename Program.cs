@@ -14,12 +14,12 @@ namespace LeetCode
             //Hello into my LeetCode solutions
             //You can find the solutions in the LeetCodeSolutions folder
 
-            Solution soulution = new Solution();
+            //Solution soulution = new Solution();
             //soulution.
         }
 
         public class Solution {
-            
+
         }
         
     }
