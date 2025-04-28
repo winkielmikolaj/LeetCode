@@ -22,4 +22,30 @@ public class _1512_Number_of_Good_Pairs
         Console.WriteLine(goodPairs);
         return goodPairs;
     }
+    
+    
+    //better approach using Dictionary to track doubled values to count good pairs also =>
+    //restrained a dictionary by nums.Length to save memory
+    public int NumIdenticalPairs2(int[] nums)
+    {
+        int goodPairs = 0;
+
+        Dictionary<int, int> xd = new Dictionary<int, int>(nums.Length);
+
+        for (int i = 0; i < nums.Length; i++)
+        {
+            if (xd.ContainsKey(nums[i]))
+            {
+                goodPairs += xd[nums[i]];
+                xd[nums[i]]++;
+            }
+            else
+            {
+                xd[nums[i]] = 1;
+            }
+        }
+
+        Console.WriteLine(goodPairs);
+        return goodPairs;
+    }
 }
