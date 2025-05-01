@@ -14,7 +14,7 @@ namespace LeetCode
             //Hello into my LeetCode solutions
             //You can find the solutions in the LeetCodeSolutions folder
 
-            //evar soulution = new Solution();
+            //var soulution = new Solution();
             //soulution.
         }
 
