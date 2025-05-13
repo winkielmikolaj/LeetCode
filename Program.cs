@@ -15,9 +15,8 @@ namespace LeetCode
             //You can find the solutions in the LeetCodeSolutions folder
 
             //var soulution = new Solution();
-            //
+            //soulution
         }
-
         public class Solution
         {
             
