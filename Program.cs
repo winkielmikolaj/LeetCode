@@ -17,6 +17,7 @@ namespace LeetCode
             //var soulution = new Solution();
             //soulution
         }
+
         public class Solution
         {
             
