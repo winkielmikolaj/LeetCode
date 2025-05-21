@@ -1,4 +1,4 @@
 1920. Build Array from Permutation
-1512. Number of Good Pairs
+1512. Number of Good Pairss
 3146. Permitation Difference between two strings
 3146. Permutation Difference between Two Strings
